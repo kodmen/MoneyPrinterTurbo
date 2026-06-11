@@ -22,4 +22,5 @@ services:
       restart: always
 
 volumes:
-  mpt-storage:
+    - mpt-storage:/MoneyPrinterTurbo/storage
+    - ./config.toml:/MoneyPrinterTurbo/config.toml
